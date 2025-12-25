@@ -27,6 +27,17 @@ def inicio():
 
     return render_template("index.html", enviado=mensaje_enviado)
 
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+@app.route("/contacto")
+def contacto():
+    return render_template("contacto.html")
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
