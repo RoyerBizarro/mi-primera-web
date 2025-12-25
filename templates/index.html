@@ -1,0 +1,27 @@
+<body>
+    <h1>Mi primera página web</h1>
+
+    <img src="{{ url_for('static', filename='logo.png') }}" width="200">
+
+    <p>Bienvenido a mi sitio web creado con Python y Flask</p>
+
+    <button onclick="alert('¡Gracias por hacer clic!')">
+        Haz clic aquí
+    </button>
+
+    
+    <h2>Formulario de contacto</h2>
+    {% if enviado %}
+    <p class="exito">✅ Mensaje enviado correctamente</p>
+    {% endif %}
+    <form method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required><br><br>
+
+    <input type="email" name="correo" placeholder="Tu correo" required><br><br>
+
+    <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+    </form>
+
+</body>
