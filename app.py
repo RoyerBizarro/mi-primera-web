@@ -28,4 +28,5 @@ def inicio():
     return render_template("index.html", enviado=mensaje_enviado)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
+
