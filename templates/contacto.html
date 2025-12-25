@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contacto</title>
-</head>
-<body>
-    <h1>Contacto</h1>
-    <p>Mi correo: ejemplo@email.com</p>
-    <a href="/">Volver al inicio</a>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+<h2>Contacto</h2>
+<p>Correo: ejemplo@email.com</p>
+{% endblock %}
